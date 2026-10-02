@@ -45,7 +45,6 @@
       });
     }, { threshold: 0.08 });
     document.querySelectorAll('.section-heading, .skill-group, .project-card').forEach(element => {
-      // Keep initially visible content visible; enhance only upcoming sections.
       if (element.getBoundingClientRect().top > window.innerHeight) {
         element.classList.add('reveal', 'reveal-pending');
         observer.observe(element);
